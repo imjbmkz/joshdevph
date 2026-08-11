@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% from 'components/macros.html' import button, content_card %}
+{% block title %}Josh Dev PH — Data Engineer{% endblock %}
+{% block content %}
+<section class="home-hero">
+  <div class="container hero-stage">
+    <div class="hero-copy-block">
+      <p class="hero-kicker">HI, I’M</p>
+      <h1>JOSH DEV PH</h1>
+      <span class="accent-rule" aria-hidden="true"></span>
+      <p class="hero-role">DATA ENGINEER.<br>ANALYTICS ENTHUSIAST.<br>PROBLEM SOLVER.</p>
+      <p class="hero-description">I build data solutions that turn raw data into meaningful insights and impactful outcomes.</p>
+      <div class="button-row hero-actions">
+        {{ button('DOWNLOAD RESUME', url_for('static', filename='files/resume.pdf'), 'accent', icon='download') }}
+        {{ button('VIEW PROJECTS', url_for('projects'), 'ghost', icon='arrow') }}
+      </div>
+    </div>
+
+    <div class="portrait-wrap">
+      <div class="portrait-glow" aria-hidden="true"></div>
+      <div class="portrait-image">
+        <img src="{{ url_for('static', filename='images/josh-profile.jpg') }}" alt="Josh Dev PH smiling by the sea" width="1536" height="2048">
+      </div>
+    </div>
+
+    <div class="hero-stats" aria-label="Profile highlights">
+      <div class="stat-item">
+        <span class="stat-icon" aria-hidden="true">▣</span>
+        <strong>6+</strong>
+        <span>YEARS<br>EXPERIENCE</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon" aria-hidden="true">&lt;/&gt;</span>
+        <strong>10+</strong>
+        <span>PROJECTS<br>COMPLETED</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon" aria-hidden="true">▶</span>
+        <strong>20+</strong>
+        <span>VIDEOS<br>SHARED</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section services-section">
+  <div class="container centered-heading">
+    <p class="eyebrow accent-text">WHAT I DO</p>
+    <h2>I BUILD DATA SOLUTIONS</h2>
+    <span class="accent-rule center" aria-hidden="true"></span>
+    <p>From data pipelines to dashboards and analytics, I help organizations make better decisions through data.</p>
+  </div>
+
+  <div class="container service-grid">
+    <article class="service-item">
+      <div class="service-icon" aria-hidden="true">⌘</div>
+      <h3>DATA<br>ENGINEERING</h3>
+      <p>Designing and building scalable data pipelines and data platforms.</p>
+    </article>
+    <article class="service-item">
+      <div class="service-icon" aria-hidden="true">▥</div>
+      <h3>DATA<br>ANALYTICS</h3>
+      <p>Turning data into insights through analysis and visualization.</p>
+    </article>
+    <article class="service-item">
+      <div class="service-icon" aria-hidden="true">◉</div>
+      <h3>DATA<br>MODELING</h3>
+      <p>Building efficient data models for better performance and scalability.</p>
+    </article>
+    <article class="service-item">
+      <div class="service-icon" aria-hidden="true">⚙</div>
+      <h3>AUTOMATION</h3>
+      <p>Automating processes to improve efficiency and data quality.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section featured-section">
+  <div class="container centered-heading compact">
+    <p class="eyebrow accent-text">FEATURED PROJECTS</p>
+    <h2>SOME THINGS I’VE BUILT</h2>
+  </div>
+  <div class="container featured-grid">
+    {% for project in projects %}{{ content_card(project) }}{% endfor %}
+  </div>
+  <div class="container section-cta centered-cta">{{ button('SEE ALL PROJECTS', url_for('projects'), 'secondary', icon='arrow') }}</div>
+</section>
+
+<section class="section dark-section learn-strip">
+  <div class="container split-callout">
+    <div>
+      <p class="eyebrow light">LEARN WITH ME</p>
+      <h2>I ALSO SHARE WHAT I LEARN.</h2>
+    </div>
+    <div>
+      <p>Practical videos about data engineering, analytics, tools, and lessons from building real projects.</p>
+      {{ button('EXPLORE LEARNING', url_for('learn'), 'light', icon='arrow') }}
+    </div>
+  </div>
+</section>
+{% endblock %}

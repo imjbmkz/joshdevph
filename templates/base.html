@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (() => {
+      const savedTheme = localStorage.getItem('theme');
+      const theme = savedTheme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.dataset.theme = theme;
+    })();
+  </script>
+  <meta name="description" content="Josh Dev PH — Data Engineering, Analytics, and Learning.">
+  <title>{% block title %}Josh Dev PH{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+  {% include 'components/navbar.html' %}
+  <main>{% block content %}{% endblock %}</main>
+  {% include 'components/footer.html' %}
+  <script>
+    const themeToggle = document.querySelector('.theme-toggle');
+    const setTheme = (theme) => {
+      document.documentElement.dataset.theme = theme;
+      if (themeToggle) themeToggle.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
+    };
+    setTheme(document.documentElement.dataset.theme);
+    themeToggle?.addEventListener('click', () => {
+      const nextTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', nextTheme);
+      setTheme(nextTheme);
+    });
+
+    const menuButton = document.querySelector('.menu-button');
+    const nav = document.querySelector('.nav');
+    if (menuButton && nav) {
+      menuButton.addEventListener('click', () => {
+        const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+        menuButton.setAttribute('aria-expanded', String(!isOpen));
+        nav.classList.toggle('is-open');
+        menuButton.setAttribute('aria-label', isOpen ? 'Open navigation' : 'Close navigation');
+      });
+      nav.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('is-open');
+          menuButton.setAttribute('aria-expanded', 'false');
+          menuButton.setAttribute('aria-label', 'Open navigation');
+        });
+      });
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 820) {
+          nav.classList.remove('is-open');
+          menuButton.setAttribute('aria-expanded', 'false');
+          menuButton.setAttribute('aria-label', 'Open navigation');
+        }
+      });
+    }
+  </script>
+</body>
+</html>

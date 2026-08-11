@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% from 'components/macros.html' import content_card %}
+{% block title %}Learn — Josh Dev PH{% endblock %}
+{% block content %}
+<section class="section page-hero"><div class="container"><p class="eyebrow">LEARN</p><h1>NOTES, VIDEOS &<br>LESSONS FROM THE WORK.</h1><p class="page-intro">Practical content on data engineering, analytics, Python, and tools I use.</p></div></section>
+<section class="section border-top"><div class="container card-grid">{% for item in items %}{{ content_card(item) }}{% endfor %}</div></section>
+{% endblock %}
