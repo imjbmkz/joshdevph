@@ -1,59 +1,28 @@
+import json
+from pathlib import Path
+
 from flask import Flask, render_template
 
 app = Flask(__name__)
+DATA_FILE = Path(app.root_path) / "data" / "site_data.json"
 
-PROJECTS = [
-    {
-        "title": "Data Engineering Project",
-        "description": "A featured data engineering project. Replace this copy with the problem, architecture, and measurable outcome.",
-        "tags": ["Python", "SQL", "ETL"],
-        "url": "https://github.com/",
-        "cta": "VIEW PROJECT",
-    },
-    {
-        "title": "Analytics & BI Project",
-        "description": "Showcase a dashboard, semantic model, warehouse, or reporting modernization project here.",
-        "tags": ["Power BI", "Analytics", "Data Modeling"],
-        "url": "https://github.com/",
-        "cta": "VIEW PROJECT",
-    },
-    {
-        "title": "Automation Project",
-        "description": "Highlight an API integration, workflow automation, or productivity tool you built.",
-        "tags": ["Python", "API", "Automation"],
-        "url": "https://github.com/",
-        "cta": "VIEW PROJECT",
-    },
-]
 
-LEARNING = [
-    {
-        "title": "Data Engineering Tutorial",
-        "description": "A YouTube lesson or walkthrough. Replace with your actual video title and short learning outcome.",
-        "tags": ["YouTube", "Data Engineering"],
-        "url": "https://youtube.com/",
-        "cta": "WATCH VIDEO",
-    },
-    {
-        "title": "Analytics Explained",
-        "description": "Use the same reusable content card for learning resources and videos.",
-        "tags": ["YouTube", "Analytics"],
-        "url": "https://youtube.com/",
-        "cta": "WATCH VIDEO",
-    },
-]
+def load_site_data():
+    """Load editable site content on every request so JSON updates appear immediately."""
+    with DATA_FILE.open(encoding="utf-8") as data_file:
+        data = json.load(data_file)
 
-SOCIALS = [
-    {"name": "GitHub", "handle": "@your-github", "url": "https://github.com/"},
-    {"name": "LinkedIn", "handle": "Josh Valdeleon", "url": "https://linkedin.com/"},
-    {"name": "YouTube", "handle": "Josh Dev PH", "url": "https://youtube.com/"},
-    {"name": "Email", "handle": "your@email.com", "url": "mailto:your@email.com"},
-]
+    for collection in ("projects", "learning", "socials"):
+        if not isinstance(data.get(collection), list):
+            raise ValueError(f'"{collection}" must be a JSON array in {DATA_FILE}')
+
+    return data
 
 
 @app.route("/")
 def home():
-    return render_template("home.html", projects=PROJECTS[:3])
+    data = load_site_data()
+    return render_template("home.html", projects=data["projects"][:3])
 
 
 @app.route("/about")
@@ -63,17 +32,20 @@ def about():
 
 @app.route("/projects")
 def projects():
-    return render_template("projects.html", projects=PROJECTS)
+    data = load_site_data()
+    return render_template("projects.html", projects=data["projects"])
 
 
 @app.route("/learn")
 def learn():
-    return render_template("learn.html", items=LEARNING)
+    data = load_site_data()
+    return render_template("learn.html", items=data["learning"])
 
 
 @app.route("/contact")
 def contact():
-    return render_template("contact.html", socials=SOCIALS)
+    data = load_site_data()
+    return render_template("contact.html", socials=data["socials"])
 
 
 if __name__ == "__main__":

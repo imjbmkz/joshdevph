@@ -83,7 +83,7 @@ button{font:inherit}
 .hero-stage{position:relative;display:grid;grid-template-columns:1.05fr .95fr;min-height:690px;align-items:center;padding-bottom:122px}
 .hero-copy-block{position:relative;z-index:3;padding:38px 0 70px}
 .hero-kicker{margin:0 0 12px;color:var(--purple);font-size:1.25rem;font-weight:800;letter-spacing:.09em}
-.hero-copy-block h1{font:400 clamp(4.5rem,8vw,7.9rem)/.88 Anton,Impact,sans-serif;letter-spacing:.012em;margin:0;text-transform:uppercase;max-width:720px}
+.hero-copy-block h1{font:400 clamp(4.5rem,8vw,7.9rem)/.94 Anton,Impact,sans-serif;letter-spacing:.012em;margin:0;text-transform:uppercase;max-width:720px}
 .hero-role{margin:0;font-size:clamp(1.25rem,2vw,1.65rem);font-weight:800;line-height:1.45;letter-spacing:.045em}
 .hero-description{max-width:590px;color:var(--hero-copy);font-size:1.05rem;margin:28px 0 0}
 .button-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
@@ -125,8 +125,8 @@ button{font:inherit}
 .service-item p{font-size:.83rem;color:var(--muted);line-height:1.65;margin:0}
 
 .featured-section{background:linear-gradient(180deg,var(--surface-tint) 0%,var(--page-bg) 70%)}
-.featured-grid,.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));border-top:1px solid var(--page-text);border-left:1px solid var(--page-text)}
-.content-card{min-height:330px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid var(--page-text);border-bottom:1px solid var(--page-text);transition:.2s;background:var(--surface)}
+.featured-grid,.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.content-card{min-height:330px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--page-text);transition:.2s;background:var(--surface)}
 .content-card:hover{background:var(--soft)}
 .content-card h3{font:700 1.7rem/1.08 'Space Grotesk';letter-spacing:-.03em;margin:0 0 18px}
 .content-card p{color:var(--muted);margin:0}
@@ -141,7 +141,7 @@ button{font:inherit}
 
 /* Inner pages retain the same design system */
 .page-hero{padding:130px 0 88px}
-.page-hero h1{font:400 clamp(4rem,8vw,7.7rem)/.9 Anton,Impact,sans-serif;letter-spacing:.01em;margin:0;max-width:1050px;text-transform:uppercase}
+.page-hero h1{font:400 clamp(4rem,8vw,7.7rem)/1 Anton,Impact,sans-serif;letter-spacing:.01em;margin:0;max-width:1050px;text-transform:uppercase}
 .page-intro{font-size:1.1rem;color:var(--muted);max-width:680px;margin:32px 0}
 .border-top{border-top:1px solid var(--line)}
 .section-heading{display:flex;align-items:end;justify-content:space-between;margin-bottom:36px}
@@ -308,4 +308,32 @@ main{min-width:0}
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+}
+
+/* Mobile hero uses normal flow so content cannot drift or clip on short screens. */
+@media (max-width:600px){
+  .home-hero{padding:34px 0 0}
+  .hero-stage{display:flex;flex-direction:column;align-items:stretch;min-height:0;padding-bottom:0}
+  .hero-copy-block{display:contents}
+  .hero-kicker{order:1;margin-bottom:8px}
+  .hero-copy-block h1{order:2;width:100%;font-size:clamp(3.35rem,15.5vw,4.7rem);line-height:.98;white-space:normal}
+  .hero-copy-block .accent-rule{order:3}
+  .hero-role{order:4;max-width:none;width:100%;font-size:1rem;line-height:1.55}
+  .hero-description{order:5;max-width:34rem;width:100%;font-size:.9rem;margin-top:22px}
+  .portrait-wrap{order:6;position:relative;right:auto;bottom:auto;width:100%;height:auto;margin:30px auto 6px}
+  .portrait-glow{inset:-32px 10%;filter:blur(8px)}
+  .portrait-image{width:190px;height:190px;margin-inline:auto}
+  .hero-actions{order:7;width:100%;max-width:390px;margin:28px auto 42px;position:relative;z-index:6}
+  .hero-stats{order:8;position:relative;left:auto;right:auto;bottom:auto;grid-template-columns:1fr;width:100%;margin:0 0 -34px;border-radius:17px}
+  .stat-item{min-height:118px;padding:20px}
+  .stat-item:not(:last-child)::after{left:20px;right:20px;top:auto;bottom:0;width:auto;height:1px}
+  .stat-item strong{font-size:2rem;margin:8px 0 5px}
+  .stat-item>span:last-child{font-size:.62rem}
+  .services-section{padding-top:102px}
+  .page-hero h1{line-height:1.04}
+}
+
+@media (max-width:390px){
+  .portrait-image{width:170px;height:170px}
+  .hero-actions{max-width:100%;margin-bottom:36px}
 }
