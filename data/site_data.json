@@ -1,4 +1,7 @@
 {
+  "branding": {
+    "logo": "images/josh-dev-logo.svg"
+  },
   "projects": [
     {
       "title": "Data Engineering Project",

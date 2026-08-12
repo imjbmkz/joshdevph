@@ -56,7 +56,8 @@ button{font:inherit}
 
 .site-header{position:sticky;top:0;z-index:50;background:rgba(7,7,7,.97);color:var(--white);border-bottom:1px solid #1d1d1d;backdrop-filter:blur(14px)}
 .nav-wrap{height:84px;display:flex;align-items:center;justify-content:space-between;gap:28px}
-.brand{font:700 1.35rem/1 'Space Grotesk',sans-serif;text-decoration:none;letter-spacing:.045em;white-space:nowrap}
+.brand{display:inline-flex;align-items:center;gap:9px;font:700 1.35rem/1 'Space Grotesk',sans-serif;text-decoration:none;letter-spacing:.045em;white-space:nowrap}
+.brand-logo{width:36px;height:36px;flex:0 0 36px}
 .brand-sun,.brand-ph{color:var(--accent)}
 .brand-sun{font-size:1.45em;vertical-align:-.06em;margin:0 .03em}
 .nav{display:flex;align-items:center;gap:28px}
@@ -193,6 +194,7 @@ button{font:inherit}
   .container{width:min(calc(100% - 28px),var(--max))}
   .nav-wrap{height:72px}
   .brand{font-size:1.08rem}
+  .brand-logo{width:30px;height:30px;flex-basis:30px}
   .theme-toggle{margin-left:auto}
   .menu-button{display:block}
   .nav{display:none;position:absolute;top:72px;left:0;right:0;background:#0a0a0a;border-top:1px solid #222;padding:18px 20px 24px;flex-direction:column;align-items:flex-start;gap:16px}

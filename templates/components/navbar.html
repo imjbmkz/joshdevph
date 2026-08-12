@@ -2,7 +2,8 @@
   <div class="container nav-wrap">
     <a class="brand" href="{{ url_for('home') }}" aria-label="Josh Dev PH home">
       <!-- J<span class="brand-sun" aria-hidden="true">☼</span>SH DEV <span class="brand-ph">PH</span> -->
-       JOSH DEV <span class="brand-ph">PH</span>
+      <!-- <img class="brand-logo" src="{{ url_for('static', filename='images/josh-dev-logo.svg') }}" alt="" width="36" height="36"> -->
+      <span>JOSH DEV <span class="brand-ph">PH</span></span>
     </a>
     <nav class="nav" aria-label="Primary navigation">
       <a href="{{ url_for('home') }}" {% if request.endpoint=='home' %} class="is-active" aria-current="page" {% endif
