@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% from 'components/macros.html' import button, content_card %}
-{% block title %}Josh Dev PH — Data Engineer{% endblock %}
+{% block title %}Josh Dev PH — Analytics Solutions{% endblock %}
 {% block content %}
 <section class="home-hero">
   <div class="container hero-stage">
@@ -8,11 +8,12 @@
       <p class="hero-kicker">HI, I’M</p>
       <h1>JOSH DEV PH</h1>
       <span class="accent-rule" aria-hidden="true"></span>
-      <p class="hero-role">DATA ENGINEER.<br>ANALYTICS ENTHUSIAST.<br>PROBLEM SOLVER.</p>
+      <!-- <p class="hero-role">ANALYTICS SOLUTIONS<br>ANALYTICS ENTHUSIAST.<br>PROBLEM SOLVER.</p> -->
+      <p class="hero-role">ANALYTICS SOLUTIONS<br>DATA AND TECH.<br>PROBLEM SOLVER.</p>
       <p class="hero-description">I build data solutions that turn raw data into meaningful insights and impactful outcomes.</p>
       <div class="button-row hero-actions">
         {{ button('DOWNLOAD RESUME', url_for('static', filename='files/resume.pdf'), 'accent', external=true, icon='download', target='_blank') }}
-        {{ button('VIEW PROJECTS', url_for('projects'), 'ghost', icon='arrow') }}
+        <!-- {{ button('VIEW PROJECTS', url_for('projects'), 'ghost', icon='arrow') }} -->
       </div>
     </div>
 
@@ -75,7 +76,7 @@
   </div>
 </section>
 
-<section class="section featured-section">
+<!-- <section class="section featured-section">
   <div class="container centered-heading compact">
     <p class="eyebrow accent-text">FEATURED PROJECTS</p>
     <h2>SOME THINGS I’VE BUILT</h2>
@@ -84,7 +85,7 @@
     {% for project in projects %}{{ content_card(project) }}{% endfor %}
   </div>
   <div class="container section-cta centered-cta">{{ button('SEE ALL PROJECTS', url_for('projects'), 'secondary', icon='arrow') }}</div>
-</section>
+</section> -->
 
 <section class="section dark-section learn-strip">
   <div class="container split-callout">
