@@ -5,6 +5,10 @@
 </a>
 {%- endmacro %}
 
+{% macro resume_button() -%}
+{{ button('DOWNLOAD MY RESUME', url_for('static', filename='files/resume.pdf'), 'resume', external=true, icon='download', target='_blank') }}
+{%- endmacro %}
+
 {% macro content_card(item) -%}
 <article class="content-card">
   <div>

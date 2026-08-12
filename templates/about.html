@@ -1,11 +1,63 @@
 {% extends 'base.html' %}
-{% from 'components/macros.html' import button %}
-{% block title %}About - Josh Dev PH{% endblock %}
+{% from 'components/macros.html' import resume_button %}
+{% block title %}Learn about my expertise.{% endblock %}
 {% block content %}
-<section class="section page-hero"><div class="container"><p class="eyebrow">ABOUT</p><h1>DATA ENGINEER.<br>PROBLEM SOLVER.<br>CONTINUOUS LEARNER.</h1></div></section>
-<section class="section border-top"><div class="container about-grid">
-  <div><h2>MY WORK</h2></div>
-  <div class="prose"><p>I build data platforms, ETL/ELT pipelines, analytics solutions, and reporting systems designed to make information reliable and useful.</p><p>My experience spans SQL, Python, Microsoft Fabric, Databricks, Power BI, Talend, SSIS, Docker, API integrations, data modeling, and automation.</p><p>I care about solutions that are technically sound but also understandable, maintainable, and tied to a real business outcome.</p>{{ button('DOWNLOAD RESUME', url_for('static', filename='files/resume.pdf')) }}</div>
-</div></section>
-<section class="section border-top"><div class="container"><p class="eyebrow">CORE AREAS</p><div class="skill-grid"><span>DATA ENGINEERING</span><span>ETL / ELT</span><span>DATA MODELING</span><span>POWER BI</span><span>PYTHON</span><span>SQL</span><span>AUTOMATION</span><span>ANALYTICS</span></div></div></section>
+<section class="section page-hero">
+  <div class="container">
+    <p class="eyebrow">ABOUT</p>
+    <h1>SOLVING PROBLEMS THROUGH<br>ANALYTICS SOLUTIONS.</h1>
+  </div>
+</section>
+<section class="section border-top">
+  <div class="container about-grid">
+    <div>
+      <h2>MY EXPERTISE</h2>
+    </div>
+    <div class="prose">
+      <p>I design and build end-to-end analytics solutions, including ETL/ELT pipelines, dashboards and reports, and machine learning models that aim to address business challenges.</p>
+      <p>My experience spans SQL, Python, Databricks, Microsoft Fabric, Talend, SSIS, Docker, API
+        integrations, data modeling, and automation.</p>
+      <p>I care about solutions that are technically sound but also understandable, maintainable, and tied to a real
+        business outcome.</p>
+      <div class="button-row resume-actions">
+        {{ resume_button() }}
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section border-top">
+  
+  <div class="container centered-heading">
+    <p class="eyebrow accent-text">CORE DATA PRACTICES</p>
+    <span class="accent-rule center" aria-hidden="true"></span>
+  </div>
+
+  <div class="container service-grid">
+    <article class="service-item">
+      <div class="service-icon" aria-hidden="true">⌘</div>
+      <h3>DATA<br>ENGINEERING</h3>
+      <p>Designing and building scalable data pipelines and data platforms. Designs business data models for better performance and scalability.</p>
+    </article>
+    <article class="service-item">
+      <div class="service-icon" aria-hidden="true">▥</div>
+      <h3>DATA<br>ANALYTICS</h3>
+      <p>Turning data into insights through analysis and visualization. Creating reports and dashboards to communicate findings effectively.</p>
+    </article>
+    <article class="service-item">
+      <div class="service-icon" aria-hidden="true">◉</div>
+      <h3>MACHINE<br>LEARNING</h3>
+      <p>Train machine learning models to uncover patterns and make predictions. Balances technical excellence with business relevance.</p>
+    </article>
+    <article class="service-item">
+      <div class="service-icon" aria-hidden="true">⚙</div>
+      <h3>AUTOMATION<br>& OPTIMIZATIONS</h3>
+      <p>Identify process bottlenecks and implement solutions to improve efficiency and data quality.</p>
+    </article>
+  </div>
+  <!-- <div class="container">
+    <p class="eyebrow">CORE AREAS</p>
+    <div class="skill-grid"><span>DATA ENGINEERING</span><span>ETL / ELT</span><span>DATA MODELING</span><span>POWER
+        BI</span><span>PYTHON</span><span>SQL</span><span>AUTOMATION</span><span>ANALYTICS</span></div>
+  </div> -->
+</section>
 {% endblock %}

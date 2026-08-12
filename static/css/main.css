@@ -97,14 +97,16 @@ button{font:inherit}
 .btn-light{background:var(--white);color:var(--black);border-color:var(--white)}
 .btn-accent{background:transparent;color:var(--white);border-color:var(--purple)}
 .btn-accent:hover{background:var(--purple);color:var(--white)}
+.btn-resume{background:transparent;color:var(--page-text);border-color:var(--purple)}
+.btn-resume:hover{background:var(--purple);color:var(--white)}
 .btn-ghost{background:transparent;color:var(--white);border-color:#8a8a8a}
 .btn-ghost:hover{border-color:var(--white)}
 .btn-icon{font-size:1.1rem;line-height:1}
 
 .portrait-wrap{position:absolute;z-index:1;right:-30px;top:18px;width:min(48vw,570px);height:430px;display:flex;align-items:center;justify-content:center}
 .portrait-glow{position:absolute;inset:18% 7% 7% 0;background:radial-gradient(circle,rgba(124,60,255,.35),rgba(124,60,255,.03) 54%,transparent 72%);filter:blur(3px)}
-.home-hero .btn-accent,.home-hero .btn-ghost{color:var(--hero-text)}
-.home-hero .btn-accent:hover{color:var(--white)}
+.home-hero .btn-accent,.home-hero .btn-ghost,.home-hero .btn-resume{color:var(--hero-text)}
+.home-hero .btn-accent:hover,.home-hero .btn-resume:hover{color:var(--white)}
 .home-hero .btn-ghost:hover{border-color:var(--hero-text)}
 .portrait-image{position:relative;z-index:2;width:310px;height:310px;overflow:hidden;border:1px solid rgba(124,60,255,.34);border-radius:50%;box-shadow:0 22px 60px rgba(19,9,41,.2)}
 .portrait-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 47%}

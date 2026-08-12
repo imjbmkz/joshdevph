@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
-{% from 'components/macros.html' import button, content_card %}
-{% block title %}Josh Dev PH - Delivering analytics solutions{% endblock %}
+{% from 'components/macros.html' import button, content_card, resume_button %}
+{% block title %}I'm Josh! I can help you build data solutions.{% endblock %}
 {% block content %}
 <section class="home-hero">
   <div class="container hero-stage">
@@ -12,7 +12,7 @@
       <p class="hero-role">ANALYTICS SOLUTIONS.<br>DATA AND TECH.<br>PROBLEM SOLVER.</p>
       <p class="hero-description">I build data solutions that turn your data into meaningful insights and impactful outcomes.</p>
       <div class="button-row hero-actions">
-        {{ button('DOWNLOAD MY RESUME', url_for('static', filename='files/resume.pdf'), 'accent', external=true, icon='download', target='_blank') }}
+        {{ resume_button() }}
         <!-- {{ button('VIEW PROJECTS', url_for('projects'), 'ghost', icon='arrow') }} -->
       </div>
     </div>
@@ -56,24 +56,25 @@
     <article class="service-item">
       <div class="service-icon" aria-hidden="true">⌘</div>
       <h3>DATA<br>ENGINEERING</h3>
-      <p>Designing and building scalable data pipelines and data platforms.</p>
+      <p>Designing and building scalable data pipelines and data platforms. Designs business data models for better performance and scalability.</p>
     </article>
     <article class="service-item">
       <div class="service-icon" aria-hidden="true">▥</div>
       <h3>DATA<br>ANALYTICS</h3>
-      <p>Turning data into insights through analysis and visualization.</p>
+      <p>Turning data into insights through analysis and visualization. Creating reports and dashboards to communicate findings effectively.</p>
     </article>
     <article class="service-item">
       <div class="service-icon" aria-hidden="true">◉</div>
-      <h3>DATA<br>MODELING</h3>
-      <p>Building efficient data models for better performance and scalability.</p>
+      <h3>MACHINE<br>LEARNING</h3>
+      <p>Train machine learning models to uncover patterns and make predictions. Balances technical excellence with business relevance.</p>
     </article>
     <article class="service-item">
       <div class="service-icon" aria-hidden="true">⚙</div>
       <h3>AUTOMATION<br>& OPTIMIZATIONS</h3>
-      <p>Automating processes to improve efficiency and data quality.</p>
+      <p>Identify process bottlenecks and implement solutions to improve efficiency and data quality.</p>
     </article>
   </div>
+  
 </section>
 
 <!-- <section class="section featured-section">
