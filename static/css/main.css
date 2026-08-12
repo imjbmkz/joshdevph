@@ -159,9 +159,20 @@ button{font:inherit}
 .prose{font-size:1.15rem}.prose p{margin-top:0;margin-bottom:22px;color:var(--body-copy)}.prose .btn{margin-top:20px}
 .skill-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--black);border-left:1px solid var(--black)}
 .skill-grid span{padding:34px 22px;border-right:1px solid var(--black);border-bottom:1px solid var(--black);font-size:.76rem;font-weight:800;letter-spacing:.08em}
-.social-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--black);border-left:1px solid var(--black)}
-.social-card{min-height:180px;padding:28px;display:grid;grid-template-columns:1fr auto;grid-template-rows:auto 1fr;text-decoration:none;border-right:1px solid var(--black);border-bottom:1px solid var(--black)}
-.social-name{font:700 2rem/1 'Space Grotesk'}.social-handle{align-self:end;color:var(--muted)}.social-arrow{font-size:1.4rem}.social-card:hover{background:var(--black);color:var(--white)}.social-card:hover .social-handle{color:#bbb}
+.social-grid{display:flex;align-items:flex-start;justify-content:center;gap:24px;flex-wrap:wrap}
+.social-card{width:92px;display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--page-text);text-align:center;text-decoration:none}
+.social-icon{width:58px;height:58px;padding:14px;border:1px solid var(--border);border-radius:50%;fill:currentColor;transition:color .2s,background .2s,border-color .2s,transform .2s}
+.social-label{font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.social-card:hover .social-icon{color:#fff;transform:translateY(-3px)}
+.social-card.social-facebook:hover .social-icon{background-color:#1877f2;border-color:#1877f2;box-shadow:0 8px 24px rgba(24,119,242,.35)}
+.social-card.social-instagram:hover .social-icon{background:linear-gradient(135deg,#833ab4,#c13584 42%,#fd1d1d 70%,#fcb045);border-color:#c13584;box-shadow:0 8px 24px rgba(193,53,132,.35)}
+.social-card.social-tiktok:hover .social-icon{background-color:#000;border-color:#000;box-shadow:4px 3px 0 #fe2c55,-4px -3px 0 #25f4ee}
+.social-card.social-linkedin:hover .social-icon{background-color:#0a66c2;border-color:#0a66c2;box-shadow:0 8px 24px rgba(10,102,194,.35)}
+.social-card.social-youtube:hover .social-icon{background-color:#f00;border-color:#f00;box-shadow:0 8px 24px rgba(255,0,0,.3)}
+.social-card.social-github:hover .social-icon{background-color:#181717;border-color:#181717;box-shadow:0 8px 24px rgba(24,23,23,.3)}
+.social-card.social-email:hover .social-icon{background-color:#ea4335;border-color:#ea4335;box-shadow:0 8px 24px rgba(234,67,53,.3)}
+:root[data-theme="dark"] .social-tiktok:hover .social-icon{border-color:#25f4ee;box-shadow:4px 3px 0 #fe2c55,-4px -3px 0 #25f4ee}
+:root[data-theme="dark"] .social-github:hover .social-icon{border-color:#6e7681;box-shadow:0 8px 24px rgba(255,255,255,.12)}
 .site-footer{border-top:1px solid var(--line);padding:34px 0}.footer-wrap{display:flex;justify-content:space-between;gap:30px;font-size:.68rem;font-weight:800;letter-spacing:.08em;color:var(--muted)}
 
 @media(max-width:900px){
