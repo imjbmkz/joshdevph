@@ -1,14 +1,19 @@
 <header class="site-header">
   <div class="container nav-wrap">
     <a class="brand" href="{{ url_for('home') }}" aria-label="Josh Dev PH home">
-      J<span class="brand-sun" aria-hidden="true">☼</span>SH DEV <span class="brand-ph">PH</span>
+      <!-- J<span class="brand-sun" aria-hidden="true">☼</span>SH DEV <span class="brand-ph">PH</span> -->
+       JOSH DEV <span class="brand-ph">PH</span>
     </a>
     <nav class="nav" aria-label="Primary navigation">
-      <a href="{{ url_for('home') }}"{% if request.endpoint == 'home' %} class="is-active" aria-current="page"{% endif %}>HOME</a>
-      <a href="{{ url_for('about') }}"{% if request.endpoint == 'about' %} class="is-active" aria-current="page"{% endif %}>ABOUT</a>
+      <a href="{{ url_for('home') }}" {% if request.endpoint=='home' %} class="is-active" aria-current="page" {% endif
+        %}>HOME</a>
+      <a href="{{ url_for('about') }}" {% if request.endpoint=='about' %} class="is-active" aria-current="page" {% endif
+        %}>ABOUT</a>
       <!-- <a href="{{ url_for('projects') }}">PROJECTS</a> -->
-      <a href="{{ url_for('learn') }}"{% if request.endpoint == 'learn' %} class="is-active" aria-current="page"{% endif %}>LEARN</a>
-      <a href="{{ url_for('contact') }}"{% if request.endpoint == 'contact' %} class="is-active" aria-current="page"{% endif %}>CONTACT</a>
+      <a href="{{ url_for('learn') }}" {% if request.endpoint=='learn' %} class="is-active" aria-current="page" {% endif
+        %}>LEARN</a>
+      <a href="{{ url_for('contact') }}" {% if request.endpoint=='contact' %} class="is-active" aria-current="page" {%
+        endif %}>CONTACT</a>
     </nav>
     <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch color theme">
       <span class="theme-icon theme-icon-sun" aria-hidden="true">&#9728;</span>
