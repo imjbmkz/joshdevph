@@ -36,63 +36,28 @@
       "tags": ["YouTube", "Analytics"],
       "url": "https://youtube.com/",
       "cta": "WATCH VIDEO"
-    },
-    {
-      "title": "sample",
-      "description": "add.",
-      "tags": ["YouTube", "Analytics"],
-      "url": "https://youtube.com/",
-      "cta": "WATCH VIDEO"
-    },
-    {
-      "title": "sample",
-      "description": "add.",
-      "tags": ["YouTube", "Analytics"],
-      "url": "https://youtube.com/",
-      "cta": "WATCH VIDEO"
-    },
-    {
-      "title": "sample",
-      "description": "add.",
-      "tags": ["YouTube", "Analytics"],
-      "url": "https://youtube.com/",
-      "cta": "WATCH VIDEO"
-    },
-    {
-      "title": "sample",
-      "description": "add.",
-      "tags": ["YouTube", "Analytics"],
-      "url": "https://youtube.com/",
-      "cta": "WATCH VIDEO"
-    },
-    {
-      "title": "sample",
-      "description": "add.",
-      "tags": ["YouTube", "Analytics"],
-      "url": "https://youtube.com/",
-      "cta": "WATCH VIDEO"
     }
   ],
   "socials": [
     {
       "name": "GitHub",
-      "handle": "@your-github",
-      "url": "https://github.com/"
+      "handle": "@imjbmkz",
+      "url": "https://github.com/imjbmkz"
     },
     {
       "name": "LinkedIn",
       "handle": "Josh Valdeleon",
-      "url": "https://linkedin.com/"
+      "url": "https://linkedin.com/in/joshdevph"
     },
     {
       "name": "YouTube",
       "handle": "Josh Dev PH",
-      "url": "https://youtube.com/"
+      "url": "https://youtube.com/@joshdevph"
     },
     {
       "name": "Email",
-      "handle": "your@email.com",
-      "url": "mailto:your@email.com"
+      "handle": "josh.valdeleon@outlook.com",
+      "url": "mailto:josh.valdeleon@outlook.com"
     }
   ]
 }
