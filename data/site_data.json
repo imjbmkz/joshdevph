@@ -40,20 +40,41 @@
   ],
   "socials": [
     {
-      "name": "GitHub",
-      "handle": "@imjbmkz",
-      "url": "https://github.com/imjbmkz"
+      "name": "Facebook",
+      "handle": "Josh Dev PH",
+      "url": "https://www.facebook.com/joshdevph"
     },
+
+    {
+      "name": "Instagram",
+      "handle": "Josh Dev PH",
+      "url": "https://www.instagram.com/joshdevph/"
+    },
+
+    {
+      "name": "TikTok",
+      "handle": "Josh Dev PH",
+      "url": "https://www.tiktok.com/@joshdevph"
+    },
+
     {
       "name": "LinkedIn",
       "handle": "Josh Valdeleon",
       "url": "https://linkedin.com/in/joshdevph"
     },
+
     {
       "name": "YouTube",
       "handle": "Josh Dev PH",
       "url": "https://youtube.com/@joshdevph"
     },
+
+    {
+      "name": "GitHub",
+      "handle": "@imjbmkz",
+      "url": "https://github.com/imjbmkz"
+    },
+    
     {
       "name": "Email",
       "handle": "josh.valdeleon@outlook.com",

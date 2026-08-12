@@ -1,5 +1,5 @@
-{% macro button(label, href, variant='primary', external=false, icon='arrow') -%}
-<a class="btn btn-{{ variant }}" href="{{ href }}" {% if external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+{% macro button(label, href, variant='primary', external=false, icon='arrow', target=None) -%}
+<a class="btn btn-{{ variant }}" href="{{ href }}" {% if external %}target="{{ target }}" rel="noopener noreferrer"{% endif %}>
   <span>{{ label }}</span>
   {% if icon == 'download' %}<span class="btn-icon" aria-hidden="true">⇩</span>{% else %}<span class="btn-icon" aria-hidden="true">→</span>{% endif %}
 </a>

@@ -11,7 +11,7 @@
       <p class="hero-role">DATA ENGINEER.<br>ANALYTICS ENTHUSIAST.<br>PROBLEM SOLVER.</p>
       <p class="hero-description">I build data solutions that turn raw data into meaningful insights and impactful outcomes.</p>
       <div class="button-row hero-actions">
-        {{ button('DOWNLOAD RESUME', url_for('static', filename='files/resume.pdf'), 'accent', icon='download') }}
+        {{ button('DOWNLOAD RESUME', url_for('static', filename='files/resume.pdf'), 'accent', external=true, icon='download', target='_blank') }}
         {{ button('VIEW PROJECTS', url_for('projects'), 'ghost', icon='arrow') }}
       </div>
     </div>
