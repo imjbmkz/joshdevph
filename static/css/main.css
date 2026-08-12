@@ -134,6 +134,9 @@ button{font:inherit}
 .featured-grid,.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
 .content-card{min-height:330px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--page-text);transition:.2s;background:var(--surface)}
 .content-card:hover{background:var(--soft)}
+.content-card-meta{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:14px}
+.content-card-meta .eyebrow{margin:0}
+.content-duration{flex:0 0 auto;padding:3px 8px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:.65rem;font-weight:800;line-height:1.35;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
 .content-card h3{font:700 1.7rem/1.08 'Space Grotesk';letter-spacing:-.03em;margin:0 0 18px}
 .content-card p{color:var(--muted);margin:0}
 .text-link{font-size:.72rem;font-weight:800;letter-spacing:.08em;text-decoration:none}

@@ -3,39 +3,92 @@
     {
       "title": "Data Engineering Project",
       "description": "A featured data engineering project. Replace this copy with the problem, architecture, and measurable outcome.",
-      "tags": ["Python", "SQL", "ETL"],
+      "tags": [
+        "Python",
+        "SQL",
+        "ETL"
+      ],
       "url": "https://github.com/",
       "cta": "VIEW PROJECT"
     },
     {
       "title": "Analytics & BI Project",
       "description": "Showcase a dashboard, semantic model, warehouse, or reporting modernization project here.",
-      "tags": ["Power BI", "Analytics", "Data Modeling"],
+      "tags": [
+        "Power BI",
+        "Analytics",
+        "Data Modeling"
+      ],
       "url": "https://github.com/",
       "cta": "VIEW PROJECT"
     },
     {
       "title": "Automation Project",
       "description": "Highlight an API integration, workflow automation, or productivity tool you built.",
-      "tags": ["Python", "API", "Automation"],
+      "tags": [
+        "Python",
+        "API",
+        "Automation"
+      ],
       "url": "https://github.com/",
       "cta": "VIEW PROJECT"
     }
   ],
   "learning": [
     {
-      "title": "Data Engineering Tutorial",
-      "description": "A YouTube lesson or walkthrough. Replace with your actual video title and short learning outcome.",
-      "tags": ["YouTube", "Data Engineering"],
-      "url": "https://youtube.com/",
-      "cta": "WATCH VIDEO"
+      "title": "BUILDING YOUR FIRST END-TO-END DATA PORTFOLIO",
+      "description": "This is my YouTube playlist covering detailed steps on how to build your first end-to-end data portfolio. This includes environment setup, building data pipelines, designing dashboards, and training machine learning models.",
+      "tags": [
+        "YouTube",
+        "Playlist"
+      ],
+      "url": "https://www.youtube.com/playlist?list=PLtomnyC4qhTwqcZ3DzBhewMNjM_4rHqnO",
+      "cta": "WATCH VIDEO",
+      "duration": "13 hours"
     },
     {
-      "title": "Analytics Explained",
-      "description": "Use the same reusable content card for learning resources and videos.",
-      "tags": ["YouTube", "Analytics"],
-      "url": "https://youtube.com/",
-      "cta": "WATCH VIDEO"
+      "title": "Build a Crypto Forecaster from Scratch 🔮 | End-to-End Project Series",
+      "description": "This is my YouTube playlist discussing how I built my end-to-end crypto forecaster. This involves initializing environment, setup of data lake, creation of ingestion pipeline, building dashboards, training machine learning models, and hosting an API.",
+      "tags": [
+        "YouTube",
+        "Playlist"
+      ],
+      "url": "https://www.youtube.com/playlist?list=PLtomnyC4qhTyzGytGB5zl2IqiQOKd5xPP",
+      "cta": "WATCH VIDEO",
+      "duration": "8 hours"
+    },
+    {
+      "title": "JOSH DEV CRASH COURSE",
+      "description": "This is my YouTube playlist containing some of the crash courses that I conducted. To date, this includes crash course on Python, SQL, and Power BI.",
+      "tags": [
+        "YouTube",
+        "Playlist"
+      ],
+      "url": "https://www.youtube.com/playlist?list=PLtomnyC4qhTyA2MVql44a-hdzdUjfRImc",
+      "cta": "WATCH VIDEO",
+      "duration": "8 hours"
+    },
+    {
+      "title": "Josh Dev Learning Session #00: Developing ETL pipelines using SQL Server Integration Services SSIS",
+      "description": "This is my live learning session where I taught the participants in making their first end-to-end ETL pipeline using SSIS.",
+      "tags": [
+        "YouTube",
+        "Learning Session"
+      ],
+      "url": "https://www.youtube.com/watch?v=DYIer0A04NU",
+      "cta": "WATCH VIDEO",
+      "duration": "3 hours"
+    },
+    {
+      "title": "Task 1 Linear Regression - The Sparks Foundation",
+      "description": "This is the first data science and business analytics task under the Graduate Rotational Internship Program (GRIP) of The Sparks Foundation.",
+      "tags": [
+        "YouTube",
+        "Learning Session"
+      ],
+      "url": "https://www.youtube.com/watch?v=m-HbzALq60U",
+      "cta": "WATCH VIDEO",
+      "duration": "36 minutes"
     }
   ],
   "socials": [
@@ -44,37 +97,31 @@
       "handle": "Josh Dev PH",
       "url": "https://www.facebook.com/joshdevph"
     },
-
     {
       "name": "Instagram",
       "handle": "Josh Dev PH",
       "url": "https://www.instagram.com/joshdevph/"
     },
-
     {
       "name": "TikTok",
       "handle": "Josh Dev PH",
       "url": "https://www.tiktok.com/@joshdevph"
     },
-
     {
       "name": "LinkedIn",
       "handle": "Josh Valdeleon",
       "url": "https://linkedin.com/in/joshdevph"
     },
-
     {
       "name": "YouTube",
       "handle": "Josh Dev PH",
       "url": "https://youtube.com/@joshdevph"
     },
-
     {
       "name": "GitHub",
       "handle": "@imjbmkz",
       "url": "https://github.com/imjbmkz"
     },
-    
     {
       "name": "Email",
       "handle": "josh.valdeleon@outlook.com",

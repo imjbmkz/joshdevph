@@ -12,7 +12,10 @@
 {% macro content_card(item) -%}
 <article class="content-card">
   <div>
-    <div class="eyebrow">{{ item.tags | join(' / ') }}</div>
+    <div class="content-card-meta">
+      <div class="eyebrow">{{ item.tags | join(' / ') }}</div>
+      {% if item.duration %}<span class="content-duration">{{ item.duration }}</span>{% endif %}
+    </div>
     <h3>{{ item.title }}</h3>
     <p>{{ item.description }}</p>
   </div>
