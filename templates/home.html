@@ -1,18 +1,18 @@
 {% extends 'base.html' %}
 {% from 'components/macros.html' import button, content_card %}
-{% block title %}Josh Dev PH — Analytics Solutions{% endblock %}
+{% block title %}Josh Dev PH - Delivering analytics solutions{% endblock %}
 {% block content %}
 <section class="home-hero">
   <div class="container hero-stage">
     <div class="hero-copy-block">
-      <p class="hero-kicker">HI, I’M</p>
-      <h1>JOSH DEV PH</h1>
+      <p class="hero-kicker">HELLO THERE! MY NAME IS</p>
+      <h1>JOSH VALDELEON</h1>
       <span class="accent-rule" aria-hidden="true"></span>
       <!-- <p class="hero-role">ANALYTICS SOLUTIONS<br>ANALYTICS ENTHUSIAST.<br>PROBLEM SOLVER.</p> -->
-      <p class="hero-role">ANALYTICS SOLUTIONS<br>DATA AND TECH.<br>PROBLEM SOLVER.</p>
-      <p class="hero-description">I build data solutions that turn raw data into meaningful insights and impactful outcomes.</p>
+      <p class="hero-role">ANALYTICS SOLUTIONS.<br>DATA AND TECH.<br>PROBLEM SOLVER.</p>
+      <p class="hero-description">I build data solutions that turn your data into meaningful insights and impactful outcomes.</p>
       <div class="button-row hero-actions">
-        {{ button('DOWNLOAD RESUME', url_for('static', filename='files/resume.pdf'), 'accent', external=true, icon='download', target='_blank') }}
+        {{ button('DOWNLOAD MY RESUME', url_for('static', filename='files/resume.pdf'), 'accent', external=true, icon='download', target='_blank') }}
         <!-- {{ button('VIEW PROJECTS', url_for('projects'), 'ghost', icon='arrow') }} -->
       </div>
     </div>
@@ -27,18 +27,18 @@
     <div class="hero-stats" aria-label="Profile highlights">
       <div class="stat-item">
         <span class="stat-icon" aria-hidden="true">▣</span>
-        <strong>6+</strong>
-        <span>YEARS<br>EXPERIENCE</span>
+        <strong>{{ years_experience }}+</strong>
+        <span>YEARS OF EXPERIENCE<br>IN DATA AND TECH</span>
       </div>
       <div class="stat-item">
         <span class="stat-icon" aria-hidden="true">&lt;/&gt;</span>
         <strong>10+</strong>
-        <span>PROJECTS<br>COMPLETED</span>
+        <span>SUPPORTED CLIENTS<br>ACROSS INDUSTRIES<br></span>
       </div>
       <div class="stat-item">
         <span class="stat-icon" aria-hidden="true">▶</span>
-        <strong>20+</strong>
-        <span>VIDEOS<br>SHARED</span>
+        <strong>36+</strong>
+        <span>HOURS OF<br>TEACHING PUBLICLY</span>
       </div>
     </div>
   </div>
@@ -47,9 +47,9 @@
 <section class="section services-section">
   <div class="container centered-heading">
     <p class="eyebrow accent-text">WHAT I DO</p>
-    <h2>I BUILD DATA SOLUTIONS</h2>
+    <h2>I BUILD DATA SOLUTIONS.</h2>
     <span class="accent-rule center" aria-hidden="true"></span>
-    <p>From data pipelines to dashboards and analytics, I help organizations make better decisions through data.</p>
+    <p>I help organizations make better decisions through consolidating data from diverse sources, building ingestion pipelines, creating actionable dashboards, and uncovering insights from data.</p>
   </div>
 
   <div class="container service-grid">
@@ -70,7 +70,7 @@
     </article>
     <article class="service-item">
       <div class="service-icon" aria-hidden="true">⚙</div>
-      <h3>AUTOMATION</h3>
+      <h3>AUTOMATION<br>& OPTIMIZATIONS</h3>
       <p>Automating processes to improve efficiency and data quality.</p>
     </article>
   </div>

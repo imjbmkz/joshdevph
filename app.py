@@ -1,10 +1,21 @@
 import json
+from datetime import datetime
 from pathlib import Path
 
 from flask import Flask, render_template
 
 app = Flask(__name__)
 DATA_FILE = Path(app.root_path) / "data" / "site_data.json"
+CAREER_START_YEAR = 2020
+
+
+@app.context_processor
+def inject_dynamic_dates():
+    current_year = datetime.now().year
+    return {
+        "current_year": current_year,
+        "years_experience": current_year - CAREER_START_YEAR,
+    }
 
 
 def load_site_data():

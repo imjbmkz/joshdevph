@@ -60,8 +60,11 @@ button{font:inherit}
 .brand-sun,.brand-ph{color:var(--purple)}
 .brand-sun{font-size:1.45em;vertical-align:-.06em;margin:0 .03em}
 .nav{display:flex;align-items:center;gap:28px}
-.nav a{font-size:.74rem;font-weight:800;text-decoration:none;letter-spacing:.09em;color:#d8d8d8}
+.nav a{position:relative;font-size:.74rem;font-weight:800;text-decoration:none;letter-spacing:.09em;color:#d8d8d8}
 .nav a:hover{color:var(--purple-soft)}
+.nav a::after{content:"";position:absolute;left:0;right:.09em;bottom:-8px;height:2px;background:var(--purple);transform:scaleX(0);transform-origin:left;transition:transform .2s}
+.nav a:hover::after,.nav a.is-active::after{transform:scaleX(1)}
+.nav a.is-active{color:var(--white)}
 .theme-toggle{flex:0 0 40px;width:40px;height:40px;display:grid;place-items:center;border:1px solid #393939;border-radius:50%;background:transparent;color:var(--white);cursor:pointer;transition:border-color .2s,background .2s,transform .2s}
 .theme-toggle:hover{border-color:var(--purple);background:rgba(124,60,255,.12);transform:translateY(-1px)}
 .theme-icon{grid-area:1/1;font-size:1.15rem;line-height:1;transition:opacity .2s,transform .25s}
@@ -93,14 +96,15 @@ button{font:inherit}
 .btn-secondary{background:var(--white);color:var(--black)}
 .btn-light{background:var(--white);color:var(--black);border-color:var(--white)}
 .btn-accent{background:transparent;color:var(--white);border-color:var(--purple)}
-.btn-accent:hover{background:var(--purple)}
+.btn-accent:hover{background:var(--purple);color:var(--white)}
 .btn-ghost{background:transparent;color:var(--white);border-color:#8a8a8a}
 .btn-ghost:hover{border-color:var(--white)}
 .btn-icon{font-size:1.1rem;line-height:1}
 
-.portrait-wrap{position:absolute;z-index:1;right:-30px;bottom:112px;width:min(48vw,570px);height:570px;display:flex;align-items:center;justify-content:center}
+.portrait-wrap{position:absolute;z-index:1;right:-30px;top:18px;width:min(48vw,570px);height:430px;display:flex;align-items:center;justify-content:center}
 .portrait-glow{position:absolute;inset:18% 7% 7% 0;background:radial-gradient(circle,rgba(124,60,255,.35),rgba(124,60,255,.03) 54%,transparent 72%);filter:blur(3px)}
 .home-hero .btn-accent,.home-hero .btn-ghost{color:var(--hero-text)}
+.home-hero .btn-accent:hover{color:var(--white)}
 .home-hero .btn-ghost:hover{border-color:var(--hero-text)}
 .portrait-image{position:relative;z-index:2;width:310px;height:310px;overflow:hidden;border:1px solid rgba(124,60,255,.34);border-radius:50%;box-shadow:0 22px 60px rgba(19,9,41,.2)}
 .portrait-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 47%}
@@ -320,7 +324,7 @@ main{min-width:0}
   .hero-copy-block .accent-rule{order:3}
   .hero-role{order:4;max-width:none;width:100%;font-size:1rem;line-height:1.55}
   .hero-description{order:5;max-width:34rem;width:100%;font-size:.9rem;margin-top:22px}
-  .portrait-wrap{order:6;position:relative;right:auto;bottom:auto;width:100%;height:auto;margin:30px auto 6px}
+  .portrait-wrap{order:6;position:relative;right:auto;top:auto;bottom:auto;width:100%;height:auto;margin:30px auto 6px}
   .portrait-glow{inset:-32px 10%;filter:blur(8px)}
   .portrait-image{width:190px;height:190px;margin-inline:auto}
   .hero-actions{order:7;width:100%;max-width:390px;margin:28px auto 42px;position:relative;z-index:6}
