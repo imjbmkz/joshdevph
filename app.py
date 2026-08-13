@@ -27,6 +27,10 @@ def load_site_data():
         if not isinstance(data.get(collection), list):
             raise ValueError(f'"{collection}" must be a JSON array in {DATA_FILE}')
 
+    resume = data.get("resume")
+    if not isinstance(resume, dict) or not isinstance(resume.get("experience"), list):
+        raise ValueError(f'"resume.experience" must be a JSON array in {DATA_FILE}')
+
     return data
 
 
@@ -38,7 +42,8 @@ def home():
 
 @app.route("/about")
 def about():
-    return render_template("about.html")
+    data = load_site_data()
+    return render_template("about.html", resume=data["resume"])
 
 
 @app.route("/projects")

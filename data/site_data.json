@@ -2,6 +2,102 @@
   "branding": {
     "logo": "images/josh-dev-logo.svg"
   },
+  "resume": {
+    "summary": "Data Engineer and Business Intelligence professional with 6+ years of experience designing data warehouses, developing ETL/ELT pipelines, implementing data governance initiatives, and delivering enterprise analytics solutions.",
+    "experience": [
+      {
+        "job_title": "Consultant",
+        "company": "Z-Lift Solutions, Inc.",
+        "duration": "January 2025 - Present",
+        "descriptions": [
+          "Supported the implementation of enterprise-wide Data Governance and Customer 360 initiatives, improving customer master data quality and reducing duplicate records by 20%.",
+          "Led the design of conceptual, logical, and physical data models to enable unified customer analytics capabilities.",
+          "Standardized ETL/ELT pipelines, data definitions, and transformation logic to improve scalability, maintainability, and governance compliance."
+        ]
+      },
+      {
+        "job_title": "Data Analyst & Data Engineer",
+        "company": "Unity Outsourcing",
+        "duration": "March 2024 - Present",
+        "descriptions": [
+          "Designed and implemented a centralized data warehouse capturing over 90% of organizational project management data.",
+          "Optimized Power BI datasets and refresh processes, reducing refresh times from 4 hours to 5 minutes.",
+          "Delivered dashboards and reports covering approximately 80% of business reporting requirements."
+        ]
+      },
+      {
+        "job_title": "Data Engineering Consultant",
+        "company": "FTW Foundation",
+        "duration": "November 2024 - January 2025",
+        "descriptions": [
+          "Designed and developed the organization's internal data warehouse to support analytics and reporting initiatives.",
+          "Established foundational data structures and ETL processes for scalable reporting."
+        ]
+      },
+      {
+        "job_title": "Business Intelligence Specialist, ETL Developer",
+        "company": "SM Prime Holdings, Inc.",
+        "duration": "April 2022 - November 2024",
+        "descriptions": [
+          "Implemented an AML sanction screening platform achieving approximately 85% screening effectiveness.",
+          "Developed automated workflows that reduced tardiness memo processing from 3 days to 10 minutes.",
+          "Built and optimized ETL pipelines that reduced report delivery times from 2-3 hours to under 5 minutes."
+        ]
+      },
+      {
+        "job_title": "Software Developer",
+        "company": "Pivotal Peak Digital Health Solutions",
+        "duration": "May 2023 - December 2023",
+        "descriptions": [
+          "Led performance enhancements for a patient blood pressure registry, improving application responsiveness by 10%.",
+          "Delivered technical training and system onboarding to 37 Rural Health Units across three provinces."
+        ]
+      },
+      {
+        "job_title": "Python Developer",
+        "company": "Freelance",
+        "duration": "September 2022 - September 2023",
+        "descriptions": [
+          "Developed Python automation tools integrating web scraping and APIs to streamline business processes.",
+          "Automated e-commerce account provisioning workflows, reducing manual effort by 40%."
+        ]
+      },
+      {
+        "job_title": "Business Systems Support",
+        "company": "Collabera Philippines",
+        "duration": "June 2020 - March 2022",
+        "descriptions": []
+      },
+      {
+        "job_title": "Communications Coach",
+        "company": "iOPEX Technologies",
+        "duration": "September 2019 - June 2020",
+        "descriptions": []
+      },
+      {
+        "job_title": "Associate Training Officer",
+        "company": "Sykes Philippines",
+        "duration": "April 2016 - September 2019",
+        "descriptions": []
+      }
+    ],
+    "certifications": [
+      {"name": "Databricks Certified Data Engineer Professional", "issuer": "Databricks", "date": "August 2026"},
+      {"name": "Microsoft Certified: Fabric Analytics Engineer Associate", "issuer": "Microsoft", "date": "May 2024"}
+    ],
+    "skills": [
+      {"category": "Data Engineering", "items": "ETL/ELT, Data Warehousing, Data Modeling, Data Integration, Analytics Engineering, Databricks"},
+      {"category": "Programming", "items": "Python, SQL, R, VBA"},
+      {"category": "Analytics & BI", "items": "Power BI, Microsoft Fabric, DAX, Power Query"},
+      {"category": "Databases", "items": "SQL Server, PostgreSQL, MongoDB, Amazon Redshift, Snowflake"},
+      {"category": "Tools & Platforms", "items": "Azure, AWS, SSIS, Prefect, Docker, Flask, FastAPI, Linux, Git"}
+    ],
+    "education": [
+      {"program": "Forecasting and Time Series Analysis", "institution": "University of the Philippines National Engineering Center (UP NEC)", "date": "August 2026"},
+      {"program": "Prescriptive Analytics", "institution": "University of the Philippines National Engineering Center (UP NEC)", "date": "August 2026"},
+      {"program": "BS in Business Administration major in Marketing Management", "institution": "Polytechnic University of the Philippines", "date": ""}
+    ]
+  },
   "projects": [
     {
       "title": "Data Engineering Project",

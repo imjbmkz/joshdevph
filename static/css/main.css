@@ -121,7 +121,7 @@ button{font:inherit}
 
 .services-section{padding-top:150px}
 .centered-heading{text-align:center;max-width:760px;margin-inline:auto}
-.centered-heading h2,.section-heading h2,.split-callout h2,.about-grid h2{font:400 clamp(2.65rem,5.4vw,5.2rem)/.96 Anton,Impact,sans-serif;letter-spacing:.01em;margin:0;text-transform:uppercase}
+.centered-heading h2,.section-heading h2,.split-callout h2,.about-grid h2,.resume-intro h2{font:400 clamp(2.65rem,5.4vw,5.2rem)/.96 Anton,Impact,sans-serif;letter-spacing:.01em;margin:0;text-transform:uppercase}
 .centered-heading>p:last-child{max-width:670px;margin:0 auto;color:#666;font-size:1.02rem}
 .centered-heading.compact{margin-bottom:38px}
 .service-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-top:60px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
@@ -158,6 +158,14 @@ button{font:inherit}
 .outline{-webkit-text-stroke:1.5px var(--black);color:transparent}
 .about-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:100px}
 .prose{font-size:1.15rem}.prose p{margin-top:0;margin-bottom:22px;color:var(--body-copy)}.prose .btn{margin-top:20px}
+.resume-layout{display:grid;grid-template-columns:minmax(240px,.65fr) minmax(0,1.35fr);gap:80px;align-items:start}
+.resume-intro{position:sticky;top:120px}.resume-intro h2{margin-bottom:24px}.resume-intro>p:last-of-type{color:var(--muted)}
+.resume-timeline{border-top:1px solid var(--border)}
+.resume-job{display:grid;grid-template-columns:180px minmax(0,1fr);gap:30px;padding:32px 0;border-bottom:1px solid var(--border)}
+.resume-duration{margin:3px 0 0;color:var(--accent);font-family:Inter,Arial,sans-serif;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.resume-job-content h3{font-family:Anton,Impact,sans-serif;font-size:1.55rem;line-height:1.15;font-weight:400;letter-spacing:.02em;margin:0 0 5px;text-transform:uppercase}.resume-company{margin:0;color:var(--page-text);font-family:Anton,Impact,sans-serif;font-size:1.05rem;font-weight:400;letter-spacing:.025em;text-transform:uppercase}.resume-job ul{margin:18px 0 0;padding-left:20px;color:var(--muted)}.resume-job li+li{margin-top:9px}
+.resume-detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px}.resume-detail-item{padding:18px 0;border-bottom:1px solid var(--border)}.resume-detail-item h3{font-family:Inter,Arial,sans-serif;font-size:1rem;line-height:1.35;font-weight:800;letter-spacing:.01em;margin:0 0 6px}.resume-detail-item p{margin:0;color:var(--muted);font-family:Inter,Arial,sans-serif;font-size:.86rem}
+.resume-intro>p,.resume-job ul{font-family:Inter,Arial,sans-serif}
 .skill-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--black);border-left:1px solid var(--black)}
 .skill-grid span{padding:34px 22px;border-right:1px solid var(--black);border-bottom:1px solid var(--black);font-size:.76rem;font-weight:800;letter-spacing:.08em}
 .social-grid{display:flex;align-items:flex-start;justify-content:center;gap:24px;flex-wrap:wrap}
@@ -276,6 +284,7 @@ main{min-width:0}
   .hero-copy-block{max-width:68%;padding-top:12px}
   .portrait-wrap{right:-64px;bottom:118px;width:61vw;height:550px}
   .about-grid,.split-callout{grid-template-columns:1fr;gap:42px}
+  .resume-layout{grid-template-columns:1fr;gap:42px}.resume-intro{position:static}.resume-detail-grid{grid-template-columns:1fr}
 }
 
 @media (max-width: 600px){
@@ -353,6 +362,7 @@ main{min-width:0}
   .stat-item>span:last-child{font-size:.62rem}
   .services-section{padding-top:102px}
   .page-hero h1{line-height:1.04}
+  .resume-job{grid-template-columns:1fr;gap:10px;padding:26px 0}.resume-duration{margin:0}.resume-detail-grid{gap:34px}
 }
 
 @media (max-width:390px){

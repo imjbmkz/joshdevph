@@ -8,6 +8,52 @@
     <h1>SOLVING PROBLEMS THROUGH<br>ANALYTICS SOLUTIONS.</h1>
   </div>
 </section>
+<section class="section border-top resume-section" aria-labelledby="resume-heading">
+  <div class="container resume-layout">
+    <aside class="resume-intro">
+      <p class="eyebrow accent-text">RESUME</p>
+      <h2 id="resume-heading">EXPERIENCE</h2>
+      <p>{{ resume.summary }}</p>
+      <div class="button-row resume-actions">{{ resume_button() }}</div>
+    </aside>
+    <div class="resume-timeline">
+      {% for job in resume.experience %}
+      <article class="resume-job">
+        <p class="resume-duration">{{ job.duration }}</p>
+        <div class="resume-job-content">
+          <h3>{{ job.job_title }}</h3>
+          <p class="resume-company">{{ job.company }}</p>
+          {% if job.descriptions %}
+          <ul>{% for description in job.descriptions %}<li>{{ description }}</li>{% endfor %}</ul>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section class="section border-top resume-details">
+  <div class="container resume-detail-grid">
+    <div>
+      <p class="eyebrow accent-text">CERTIFICATIONS</p>
+      {% for certification in resume.certifications %}
+      <article class="resume-detail-item"><h3>{{ certification.name }}</h3><p>{{ certification.issuer }}{% if certification.date %} · {{ certification.date }}{% endif %}</p></article>
+      {% endfor %}
+    </div>
+    <div>
+      <p class="eyebrow accent-text">TECHNICAL SKILLS</p>
+      {% for skill in resume.skills %}
+      <article class="resume-detail-item"><h3>{{ skill.category }}</h3><p>{{ skill['items'] }}</p></article>
+      {% endfor %}
+    </div>
+    <div>
+      <p class="eyebrow accent-text">EDUCATION & TRAINING</p>
+      {% for item in resume.education %}
+      <article class="resume-detail-item"><h3>{{ item.program }}</h3><p>{{ item.institution }}{% if item.date %} · {{ item.date }}{% endif %}</p></article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 <section class="section border-top">
   <div class="container about-grid">
     <div>
