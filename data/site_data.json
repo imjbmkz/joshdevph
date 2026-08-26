@@ -135,6 +135,17 @@
   ],
   "learning": [
     {
+      "title": "Databricks End-to-End Project: Data Engineering, Machine Learning, Dashboards & Genie",
+      "description": "In this hands-on Databricks crash course, we use cryptocurrency market data from the CoinGecko API to demonstrate a complete analytics workflow.",
+      "tags": [
+        "YouTube",
+        "Learning Session"
+      ],
+      "url": "https://www.youtube.com/watch?v=QY0JsqygwUE",
+      "cta": "WATCH VIDEO",
+      "duration": "2 hours"
+    },
+    {
       "title": "BUILDING YOUR FIRST END-TO-END DATA PORTFOLIO",
       "description": "This is my YouTube playlist covering detailed steps on how to build your first end-to-end data portfolio. This includes environment setup, building data pipelines, designing dashboards, and training machine learning models.",
       "tags": [
