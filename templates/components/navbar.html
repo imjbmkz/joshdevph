@@ -13,6 +13,8 @@
       <!-- <a href="{{ url_for('projects') }}">PROJECTS</a> -->
       <a href="{{ url_for('learn') }}" {% if request.endpoint=='learn' %} class="is-active" aria-current="page" {% endif
         %}>LEARN</a>
+      <a href="{{ url_for('bootcamp') }}" {% if request.endpoint=='bootcamp' %} class="is-active" aria-current="page" {%
+        endif %}>BOOTCAMP</a>
       <a href="{{ url_for('contact') }}" {% if request.endpoint=='contact' %} class="is-active" aria-current="page" {%
         endif %}>CONTACT</a>
     </nav>

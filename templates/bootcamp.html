@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% block title %}Analytics Solutions Bootcamp | Josh Dev PH{% endblock %}
+{% block content %}
+<section class="bootcamp-hero">
+  <div class="container bootcamp-hero-grid">
+    <div class="bootcamp-copy">
+      <p class="eyebrow accent-text">REGISTRATION IS NOW OPEN</p>
+      <h1>ANALYTICS SOLUTIONS<br>BOOTCAMP</h1>
+      <span class="accent-rule" aria-hidden="true"></span>
+      <p class="bootcamp-lead">A free, seven-week online learning program for aspiring data professionals who want to build practical, end-to-end analytics skills.</p>
+      <div class="bootcamp-badges" aria-label="Program highlights">
+        <span>7 WEEKS</span>
+        <span>12 PARTICIPANTS</span>
+        <span>ONLINE</span>
+        <span>FREE</span>
+      </div>
+      <a class="btn btn-primary bootcamp-apply" href="https://forms.cloud.microsoft/r/MSd9UX2rux" target="_blank" rel="noopener noreferrer">
+        APPLY NOW <span class="btn-icon" aria-hidden="true">↗</span>
+      </a>
+      <p class="application-note">Applications close September 18, 2026. Selected participants will be confirmed on September 20, 2026.</p>
+    </div>
+    <figure class="bootcamp-poster">
+      <img src="{{ url_for('static', filename='images/bootcamp-announcement.jpg') }}" alt="Analytics Solutions Bootcamp registration poster: free seven-week online bootcamp for 12 participants. Registration closes September 18, participants are confirmed September 20, and the bootcamp begins September 25, 2026." width="900" height="1125">
+    </figure>
+  </div>
+</section>
+
+<section class="section bootcamp-about">
+  <div class="container bootcamp-about-grid">
+    <div>
+      <p class="eyebrow accent-text">ABOUT THE PROGRAM</p>
+      <h2>BUILD COMPLETE ANALYTICS SOLUTIONS.</h2>
+    </div>
+    <div class="prose">
+      <p>Through weekly lectures, demonstrations, hands-on case studies, and a progressive capstone project, participants will learn how data is managed, engineered, analyzed, governed, and transformed into machine learning and AI-powered solutions that address real-world problems.</p>
+      <p>The program begins on <strong>September 25, 2026</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bootcamp-curriculum border-top">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow accent-text">SEVEN-WEEK CURRICULUM</p>
+        <h2>WHAT YOU'LL LEARN</h2>
+      </div>
+    </div>
+    <ol class="week-grid">
+      <li><span>01</span><div><small>WEEK 1</small><h3>Foundations of Analytics Solutions</h3></div></li>
+      <li><span>02</span><div><small>WEEK 2</small><h3>Foundations of Data Management</h3></div></li>
+      <li><span>03</span><div><small>WEEK 3</small><h3>Fundamentals of Data Engineering</h3></div></li>
+      <li><span>04</span><div><small>WEEK 4</small><h3>Data Analysis and Business Intelligence Essentials</h3></div></li>
+      <li><span>05</span><div><small>WEEK 5</small><h3>Data Science and Machine Learning Essentials</h3></div></li>
+      <li><span>06</span><div><small>WEEK 6</small><h3>Data Governance Essentials</h3></div></li>
+      <li><span>07</span><div><small>WEEK 7</small><h3>Artificial Intelligence Essentials</h3></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section dark-section bootcamp-cta">
+  <div class="container split-callout">
+    <div>
+      <p class="eyebrow light">READY TO LEARN?</p>
+      <h2>APPLY FOR ONE OF 12 SEATS.</h2>
+    </div>
+    <div>
+      <p>Complete the application form by September 18, 2026. The form opens in a new tab.</p>
+      <a class="btn btn-light" href="https://forms.cloud.microsoft/r/MSd9UX2rux" target="_blank" rel="noopener noreferrer">
+        OPEN APPLICATION <span class="btn-icon" aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+{% endblock %}
