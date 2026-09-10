@@ -58,6 +58,11 @@ def learn():
     return render_template("learn.html", items=data["learning"])
 
 
+@app.route("/bootcamp")
+def bootcamp():
+    return render_template("bootcamp.html")
+
+
 @app.route("/contact")
 def contact():
     data = load_site_data()
