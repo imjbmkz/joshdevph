@@ -6,9 +6,6 @@ A minimal Flask portfolio inspired by the clean section-driven presentation of P
 - Python + Flask
 - Jinja templates
 - Plain CSS
-- No database
-- No JavaScript framework
-- No Tailwind / Node build step
 
 ## Pages
 - `/` Home
@@ -16,6 +13,7 @@ A minimal Flask portfolio inspired by the clean section-driven presentation of P
 - `/projects` Projects
 - `/learn` Learn / YouTube resources
 - `/contact` Contact / socials
+- `/bootcamp` Bootcamp details (temporary)
 
 ## Reusable components
 - `templates/base.html` — shared layout
