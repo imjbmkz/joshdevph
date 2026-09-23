@@ -58,9 +58,11 @@ def learn():
     return render_template("learn.html", items=data["learning"])
 
 
-@app.route("/bootcamp")
-def bootcamp():
-    return render_template("bootcamp.html")
+# Bootcamp registration is currently closed.
+# Uncomment this route to make /bootcamp accessible again.
+# @app.route("/bootcamp")
+# def bootcamp():
+#     return render_template("bootcamp.html")
 
 
 @app.route("/contact")
