@@ -13,6 +13,11 @@
       <!-- <a href="{{ url_for('projects') }}">PROJECTS</a> -->
       <a href="{{ url_for('learn') }}" {% if request.endpoint=='learn' %} class="is-active" aria-current="page" {% endif
         %}>LEARN</a>
+      {# Bootcamp registration is currently closed.
+      Uncomment this block together with the Flask route to restore the tab.
+      <a href="{{ url_for('bootcamp') }}" {% if request.endpoint=='bootcamp' %} class="is-active" aria-current="page" {%
+        endif %}>BOOTCAMP</a>
+      #}
       <a href="{{ url_for('contact') }}" {% if request.endpoint=='contact' %} class="is-active" aria-current="page" {%
         endif %}>CONTACT</a>
     </nav>
