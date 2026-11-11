@@ -135,6 +135,17 @@
   ],
   "learning": [
     {
+      "title": "Analytics Solutions Bootcamp",
+      "description": "An introduction to different data functions, and a primer to designing and building end-to-end analytics solutions.",
+      "tags": [
+        "YouTube",
+        "Playlist"
+      ],
+      "url": "https://www.youtube.com/playlist?list=PLH3GqbWOo43I",
+      "cta": "WATCH VIDEO",
+      "duration": "17 hours"
+    },
+    {
       "title": "Databricks End-to-End Project: Data Engineering, Machine Learning, Dashboards & Genie",
       "description": "In this hands-on Databricks crash course, we use cryptocurrency market data from the CoinGecko API to demonstrate a complete analytics workflow.",
       "tags": [
